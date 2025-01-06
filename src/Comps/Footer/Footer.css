@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+    margin-top: -7rem;
+}
+.f-content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    width: 100%;
+    gap :4rem;
+    color: white;
+
+}
+
+.f-icons{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+@media screen and (max-width: 480px){
+    .f-content{
+      transform: scale(.5);
+    }
+  }
