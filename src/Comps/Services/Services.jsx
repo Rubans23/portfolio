@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux'; 
 import "../../App.css";
 
+
 function Services() {
     const transition = { duration: 1, type: "spring" };
     const mode = useSelector((state) => state.mode.mode); 

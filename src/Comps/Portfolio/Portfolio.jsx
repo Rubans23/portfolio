@@ -6,6 +6,7 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
+import Appimage from "../../img/App.png"
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
 import { useSelector } from 'react-redux'; 
@@ -36,7 +37,7 @@ const Portfolio = () => {
           <img className="swiperimg" src={Sidebar} alt="Sidebar Project" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="swiperimg" src={Ecommerce} alt="Ecommerce Project" />
+          <img className="swiperimg" src={Appimage} alt="Ecommerce Project" />
         </SwiperSlide>
         <SwiperSlide>
           <img className="swiperimg" src={MusicApp} alt="Music App Project" />

@@ -15,8 +15,14 @@ import { useSelector } from 'react-redux';
 function Intro() {
 
 
-  const transition = {duration : 2, type :'spring'}
+  
   const mode = useSelector((state) => state.mode.mode);  
+  const transition = {duration : 2, type :'spring'}
+  const scrollToSection = (sectionId) => { 
+    document.getElementById(sectionId).scrollIntoView({ 
+        behavior: 'smooth' 
+    }); 
+};
   return (
     <div id='intro' className="intro">
       <div className="i-left">
@@ -25,7 +31,7 @@ function Intro() {
           <span >Ruban S</span>
           <span style={mode==="dark" ? {color:'#E2E2B6'}: {}} >Experienced React Developer with 3.2+ years in React and JavaScript. Skilled in designing secure, maintainable client-side apps, API development, and automated testing. Up-to-date with front-end trends and best practices. Strong mentor for junior developers.</span>
         </div>
-        <button className='i-button button'>Hire me</button>
+        <button onClick={() => scrollToSection('contact')} className='i-button button'>Hire me</button>
         <div className="i-social-media">
           <a href='www.google.com'><img src={Github} alt="github" /></a>
           <a href='www.google.com'><img src={Insta} alt="instagram" /></a>

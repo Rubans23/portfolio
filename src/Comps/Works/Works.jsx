@@ -17,9 +17,9 @@ function Works() {
         <span style={mode==="dark" ? {color:'#E2DFD0'}: {}} >Technologies and</span>
         <span>frameworks I've used</span>
         
-        <span style={mode==="dark" ? {color:'#E2E2B6'}: {}}>I specialize in designing and developing scalable,   
+        <span style={mode==="dark" ? {color:'#E2E2B6'}: {}}>I specialize in designing and developing scalable,  component-based 
           <br />
-          component-based UI architectures using ReactJS, Redux, and various frontend technologies.
+          UI architectures using ReactJS, Redux, and various frontend technologies.
           <br />
           I have a strong background in API integration, state management, testing, and
           <br />
@@ -28,7 +28,7 @@ function Works() {
         <button onClick={() => scrollToSection('contact')} className='button s-button'>Hire me</button>
         <div className="blur s-blur" style={{ background: '#ABF1FF94' }}></div>
       </div>
-      <div className="w-right">
+      <div style={{marginLeft:'-3rem'}} className="w-right">
         <motion.div
           initial = {{rotate:45}}
           whileInView={{rotate:0}}

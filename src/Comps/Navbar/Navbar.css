@@ -1,12 +1,14 @@
 .n-wrapper{
     height: 11vh;
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     position: fixed; 
     top: 0;
     z-index: 4;
     backdrop-filter: blur(10px);
+
+    margin-left: -1rem;
 }
 .n-left{
     flex: 1;
