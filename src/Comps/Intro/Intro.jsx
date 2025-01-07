@@ -54,14 +54,14 @@ function Intro() {
         whileInView={{left:"68%"}}
         transition={transition}
         className='hide' style={{ top: '-4%', left: '66%' }}>
-          <Floatingdiv image={Crown} txt1='Web' txt2='Developer' />
+          <Floatingdiv image={Thumbup} txt1='Critical' txt2='Thinking' />
         </motion.div>
         <motion.div 
         initial = {{top: "18.7rem",left : "5rem"}}
         whileInView={{left:"0rem"}}
         transition={transition}
-        className='hide' style={{ top: '18rem', left: '0rem' }}>
-          <Floatingdiv image={Thumbup} txt1='Critical' txt2='Thinking' />
+        className='' style={{ top: '18rem', left: '0rem' }}>
+          <Floatingdiv image={Crown} txt1='Web' txt2='Developer' />
         </motion.div>
         <div className='blur' style={{background:'rgb(238 210 255)' }}></div>
         <div className='blur' style={{background:'#C1F5FF', top:'17rem', width:'21rem', height:'11rem', left:'-9rem' }}></div>

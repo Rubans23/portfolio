@@ -1,4 +1,4 @@
-import React from 'react';
+import {React , useEffect, useState} from 'react';
 import "./Services.css";
 import Card from '../Cards/Card';
 import front from "../../img/front.png";
@@ -13,12 +13,23 @@ import "../../App.css";
 function Services() {
     const transition = { duration: 1, type: "spring" };
     const mode = useSelector((state) => state.mode.mode); 
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 480);
+      useEffect(() => {
+        const handleResize = () => {
+          setIsSmallScreen(window.innerWidth < 480);
+        }
+        window.addEventListener('resize',handleResize);
+        return () => {
+            window.removeEventListener('resize',handleResize)
+        };
+      },[])
     const cardData = [
         {
             emoji: front,
             heading: 'Front-end',
             detail: 'Developed scalable UI components and collaborated with teams to create high-quality web apps.',
             style: { left: '14rem' },
+            mstyle: { left: '2rem' },
   
         },
         {
@@ -26,12 +37,14 @@ function Services() {
             heading: 'Backend',
             detail: 'Implemented server-side rendering for JWT authentication and ensured secure data handling.',
             style: { top: '12rem', left: '-4rem' },
+            mstyle: { top: '12rem', left: '-4rem' },
         },
         {
             emoji: api,
             heading: 'API',
             detail: 'Integrated APIs with web applications, facilitating seamless communication between front-end and back-end components.',
             style: { top: '19rem', left: '12rem' },
+            mstyle: { top: '24rem', left: '2rem' },
         },
     ];
 
@@ -60,27 +73,33 @@ function Services() {
                 <button className='button s-button'  onClick={handleDownloadCV}>Download CV</button>
                 <div className="blur s-blur" style={{ background: '#ABF1FF94' }}></div>
             </div>
-            <motion.div className="cardslist"
-            initial={{ left: '36%' }} 
-            whileInView={{ left: '12%' }} 
-            transition={transition}
-            >
-                {cardData.map((card, index) => (
-                    <div
-                        key={index}
-                        style={card.style}
-                        
-                    >
-                        <Card
-                            emoji={card.emoji}
-                            heading={card.heading}
-                            detail={card.detail}
-                        />
-                    </div>
-                ))}
+            <div className="cardslist">
+                
+                    <motion.div 
+                        initial={!isSmallScreen ? {left : '11rem'} :{left : '1rem'} }
+                        whileInView={!isSmallScreen ? {left:'15rem'}: {left:'5rem'}}
+                        transition={transition}
+                     style={!isSmallScreen ? cardData[0].style : cardData[0].mstyle}>
+                        <Card emoji={cardData[0].emoji} heading={cardData[0].heading} detail={cardData[0].detail} />
+                    </motion.div>
+                    <motion.div
+                    initial={!isSmallScreen ? {left : '3rem'}:{left : '3rem'} }
+                    whileInView={!isSmallScreen ? {left:'-3rem'}:{left:'-3rem'}}
+                    transition={transition}
+                    style={!isSmallScreen ? cardData[1].style : cardData[1].mstyle}>
+                        <Card emoji={cardData[1].emoji} heading={cardData[1].heading} detail={cardData[1].detail} />
+                    </motion.div>
+                    <motion.div 
+                    initial={!isSmallScreen ? {left : '11rem'}:{left : '-1rem'}}
+                    whileInView={!isSmallScreen ? {left:'15rem'}:{left:'4rem'}}
+                    transition={transition}
+                    style={!isSmallScreen ? cardData[2].style : cardData[2].mstyle}>
+                        <Card emoji={cardData[2].emoji} heading={cardData[2].heading} detail={cardData[1].detail} />
+                    </motion.div>
+             
                 <div className="blur s-blur2" style={{ background: 'var(--purple)' }}></div>
                 <div className="blur s-blur1" style={{ background: 'var(--blueCard)' }}></div>
-            </motion.div>
+            </div>
         </div>
     );
 }

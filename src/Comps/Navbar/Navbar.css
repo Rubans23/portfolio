@@ -50,4 +50,11 @@
     .n-list {
       display: none;
     }
+    .n-right{
+        margin-right: 40px;
+    }
+    .n-wrapper{
+        margin-left: -3.5rem;
+        padding-left: 1.5rem;
+    }
   }
