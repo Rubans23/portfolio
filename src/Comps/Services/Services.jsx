@@ -76,14 +76,14 @@ function Services() {
             <div className="cardslist">
                 
                     <motion.div 
-                        initial={!isSmallScreen ? {left : '11rem'} :{left : '1rem'} }
-                        whileInView={!isSmallScreen ? {left:'15rem'}: {left:'5rem'}}
+                        initial={!isSmallScreen ? {left : '11rem'} :{left : '-1rem'} }
+                        whileInView={!isSmallScreen ? {left:'15rem'}: {left:'3rem'}}
                         transition={transition}
                      style={!isSmallScreen ? cardData[0].style : cardData[0].mstyle}>
                         <Card emoji={cardData[0].emoji} heading={cardData[0].heading} detail={cardData[0].detail} />
                     </motion.div>
                     <motion.div
-                    initial={!isSmallScreen ? {left : '3rem'}:{left : '3rem'} }
+                    initial={!isSmallScreen ? {left : '7rem'}:{left : '3rem'} }
                     whileInView={!isSmallScreen ? {left:'-3rem'}:{left:'-3rem'}}
                     transition={transition}
                     style={!isSmallScreen ? cardData[1].style : cardData[1].mstyle}>

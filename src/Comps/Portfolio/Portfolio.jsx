@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/autoplay"; 
 import { Autoplay } from "swiper/modules";
 import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
 import Appimage from "../../img/App.png"
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";

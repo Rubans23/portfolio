@@ -12,8 +12,8 @@ function Footer() {
         <span style={{fontSize:'30px'}}>rubans230999@gmail.com</span>
         <span style={{fontSize:'30px'}}>6381024183</span>
         <div className="f-icons">
-          <FaLinkedin style={{ width: '2rem', height: '2rem' }} color="white" />
-          <FaGithub style={{ width: '2rem', height: '2rem' }} color="white" />
+          <FaLinkedin onClick={() => window.open('https://www.linkedin.com/in/rubans23091999/', '_blank', 'noopener,noreferrer')} style={{ width: '2rem', height: '2rem',cursor:'pointer' }} color="white" />
+          <FaGithub onClick={() => window.open('https://github.com/Rubans23/', '_blank', 'noopener,noreferrer')} style={{ width: '2rem', height: '2rem' ,cursor:'pointer'}} color="white" />
         </div>
       </div>
     </div>

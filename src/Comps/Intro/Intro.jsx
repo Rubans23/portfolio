@@ -33,9 +33,9 @@ function Intro() {
         </div>
         <button onClick={() => scrollToSection('contact')} className='i-button button'>Hire me</button>
         <div className="i-social-media">
-          <a href='www.google.com'><img src={Github} alt="github" /></a>
+          <a href='https://github.com/Rubans23/' target='_blank' rel="noreferrer"><img src={Github} alt="github" /></a>
           <a href='www.google.com'><img src={Insta} alt="instagram" /></a>
-          <a href='www.google.com'><img src={Linkedin} alt="linkedin" /></a>
+          <a href='https://www.linkedin.com/in/rubans23091999/' target='_blank' rel="noreferrer"><img src={Linkedin} alt="linkedin" /></a>
         </div>
       </div>
       <div className="i-right">
