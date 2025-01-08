@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Rubans23/portfolio/static/css/main.d8766da0.css",
+    "main.js": "/Rubans23/portfolio/static/js/main.62b03b39.js",
+    "static/media/sidebar.png": "/Rubans23/portfolio/static/media/sidebar.acb9a1338e61a123a281.png",
+    "static/media/hoc.png": "/Rubans23/portfolio/static/media/hoc.f5936e923380f13fdd06.png",
+    "static/media/App.png": "/Rubans23/portfolio/static/media/App.b8d16257ffdd453f582e.png",
+    "static/media/boy.png": "/Rubans23/portfolio/static/media/boy.f359b41604acc32bacc3.png",
+    "static/media/musicapp.png": "/Rubans23/portfolio/static/media/musicapp.f1c301f91904ef5f9249.png",
+    "static/media/RubanS_CV.pdf": "/Rubans23/portfolio/static/media/RubanS_CV.ead82cb6e761d6716bf3.pdf",
+    "static/media/front.png": "/Rubans23/portfolio/static/media/front.3fdca34e64d985a5d5a0.png",
+    "static/media/Gumela.ttf": "/Rubans23/portfolio/static/media/Gumela.bf98a454247ad9695fde.ttf",
+    "static/media/code.png": "/Rubans23/portfolio/static/media/code.569da3659c41a7c40aa0.png",
+    "static/media/api.png": "/Rubans23/portfolio/static/media/api.3b1f22a2427ec70c0742.png",
+    "static/media/wave.png": "/Rubans23/portfolio/static/media/wave.fdfef4069ad90f610990.png",
+    "static/media/Vector2.png": "/Rubans23/portfolio/static/media/Vector2.28db5bfd58081dd1df1b.png",
+    "index.html": "/Rubans23/portfolio/index.html",
+    "main.d8766da0.css.map": "/Rubans23/portfolio/static/css/main.d8766da0.css.map",
+    "main.62b03b39.js.map": "/Rubans23/portfolio/static/js/main.62b03b39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8766da0.css",
+    "static/js/main.62b03b39.js"
+  ]
+}
